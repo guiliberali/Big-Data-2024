@@ -74,21 +74,21 @@ Advanced reading: On the optimality of naive Bayes - optional [here](https://git
 
 CODE
 
-* Lecture 01-1: [notebooks](https://github.com/guiliberali/ ) 
+* Lecture 01-1: [notebooks]( https://github.com/guiliberali/Big-Data-2024) 
   
 
-* Lecture 01-2: [notebooks](https://github.com/guiliberali/ ) and  [Naive Bayes classifier - fundamentals - a cartoon version in Excel](https://github.com/guiliberali/Big-Data-2023-Module-1/blob/main/lectures/Lecture_2/Cartoon_Example_NBC.xlsx)  
+* Lecture 01-2: [notebooks](https://github.com/guiliberali/Big-Data-2024 ) and  [Naive Bayes classifier - fundamentals - a cartoon version in Excel](https://github.com/guiliberali/Big-Data-2023-Module-1/blob/main/lectures/Lecture_2/Cartoon_Example_NBC.xlsx)  
 
 
-* Lecture 01-3: [notebooks](https://github.com/guiliberali/Big-Data-2023-Module-1/tree/main/lectures/Lecture_3) 
+* Lecture 01-3: [notebooks](https://github.com/guiliberali/Big-Data-2024) 
 
 
 
 ASSIGNMENT MODULE 1
 
-* [1. first steps](https://github.com/guiliberali/Big-Data-2023-Module-1/blob/main/assigment/One-pager.pdf)
-* [2. full details](https://github.com/guiliberali/Big-Data-2023-Module-1/blob/main/assigment/Assignment%20Module%201_task.pdf) 
-* [3. template](https://github.com/guiliberali/Big-Data-2023-Module-1/blob/main/assigment/Assignment_1_ERNANUMBER.ipynb)
+* [1. first steps](https://github.com/guiliberali/Big-Data-2024f)
+* [2. full details](https://github.com/guiliberali/Big-Data-2024) 
+* [3. template](https://github.com/guiliberali/Big-Data-2024)
 
 * Rubric - please download it from Canvas. 
  
