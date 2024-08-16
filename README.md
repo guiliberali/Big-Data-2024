@@ -36,13 +36,8 @@ For the homework assignment, use the structure found in the final assignment fil
 
 ## Getting up to speed - Course preparation
 
-Please consider studying the material covered in the following online courses:
-
-* [Introduction To Python Programming](http://github.com/guiliberali/Big-Data-2023-Module-1/blob/main/lectures/pythonforbeginnersintro.html)
-
-*  [Five Best Free Pandas Courses](http://github.com/guiliberali/Big-Data-2023-Module-1/blob/main/lectures/5-best-free-pandas-courses-for-beginners-in-2022-d7dbe017b90c.html)
-
-Use textbooks or online resources to fill gaps in your skills. The pre-course assignments will prepare you for the materials covered in Learning from Big Data and help you assess how ready you are for this course.
+As preparation for the course, or simply to fine-tune your R basic skills if needed, please consider studying the material covered in the beginner's section of https://www.kaggle.com/learn-guide/r.
+In general, use textbooks or online resources to fill gaps in your skills whenever needed.
 
 Tayyip Altan, our TA (tayyip-altan@hotmail.com) will be holding R tutorials as follows:
 * Tutorial 0: Introduction to R and R Markdown
@@ -66,7 +61,7 @@ THEORY
 * Lecture 01-1: Introduction. [Berger et al. overview on text analytics in marketing](https://journals.sagepub.com/doi/full/10.1177/0022242919873106 ) and [Datar and Bowler's Tamarin case(via Canvas)](https://canvas.eur.nl/courses/45401/modules/items/1041656).   
 
 * Lecture 01-2: Supervised Models and NLP. [Zacharski chapters 6 and 7 on NBC](http://guidetodatamining.com/) and [Hutto and Gilber's paper on VADER](https://ojs.aaai.org/index.php/ICWSM/article/view/14550).
-Advanced reading: On the optimality of naive Bayes - optional [here](https://github.com/guiliberali/Big-Data-2023-Module-1/blob/main/lectures/Lecture_2/The_Optimality_of_Naive_Bayes.pdf)  
+Advanced reading: On the optimality of naive Bayes - optional [here](https://github.com/guiliberali/Big-Data-2024 )  
 
 * Lecture 01-3: Unsupervised Models and NLP. [Blei et al.'s classical paper on LDA](https://dl.acm.org/doi/10.5555/944919.944937) and  [Mikolov et al.'s classical paper on word2vec ](https://arxiv.org/abs/1301.3781).   
 
@@ -77,7 +72,7 @@ CODE
 * Lecture 01-1: [notebooks]( https://github.com/guiliberali/Big-Data-2024) 
   
 
-* Lecture 01-2: [notebooks](https://github.com/guiliberali/Big-Data-2024 ) and  [Naive Bayes classifier - fundamentals - a cartoon version in Excel](https://github.com/guiliberali/Big-Data-2023-Module-1/blob/main/lectures/Lecture_2/Cartoon_Example_NBC.xlsx)  
+* Lecture 01-2: [notebooks](https://github.com/guiliberali/Big-Data-2024 ) and  [Naive Bayes classifier - fundamentals - a cartoon version in Excel](https://github.com/guiliberali/Big-Data-2024 )  
 
 
 * Lecture 01-3: [notebooks](https://github.com/guiliberali/Big-Data-2024) 
@@ -86,7 +81,7 @@ CODE
 
 ASSIGNMENT MODULE 1
 
-* [1. first steps](https://github.com/guiliberali/Big-Data-2024f)
+* [1. first steps](https://github.com/guiliberali/Big-Data-2024)
 * [2. full details](https://github.com/guiliberali/Big-Data-2024) 
 * [3. template](https://github.com/guiliberali/Big-Data-2024)
 
