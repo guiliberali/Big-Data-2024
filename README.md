@@ -44,7 +44,17 @@ Please consider studying the material covered in the following online courses:
 
 Use textbooks or online resources to fill gaps in your skills. The pre-course assignments will prepare you for the materials covered in Learning from Big Data and help you assess how ready you are for this course.
 
-Hasan, our TA (learningbigdata23@gmail.com) will review and discuss a short tutorial on Python  at 3pm on September 8, 2023 (i.e., right after the first lecture) and see if anyone has any questions on how to use Python and Jupyter files. Feel free to attend if you would like to get some tips, but do make sure you first try to install it on your computer before the class.  
+Tayyip Altan, our TA (tayyip-altan@hotmail.com) will be holding R tutorials as follows:
+* Tutorial 0: Introduction to R and R Markdown
+* Tutorial 1.1: R on supervised learning examples
+* Tutorial 1.2: R on unsupervised learning examples
+* Tutorial 1.3: R Q&A given module report
+* Tutorial 2.1: R on greedy and regret examples
+* Tutorial 2.2: R on TS examples
+* Tutorial 2.3: R on UCB  examples
+* Tutorial 2.4: R Q&A given module report
+
+All these tutorials are optional. Feel free to attend if you would like to get some tips, but do make sure you first try to install it on your computer before the class.  
 
  
 ## Lecture materials for module 1
@@ -64,10 +74,10 @@ Advanced reading: On the optimality of naive Bayes - optional [here](https://git
 
 CODE
 
-* Lecture 01-1: [notebooks](https://github.com/guiliberali/Big-Data-2023-Module-1/tree/main/lectures/Lecture_1) 
+* Lecture 01-1: [notebooks](https://github.com/guiliberali/ ) 
   
 
-* Lecture 01-2: [notebooks](https://github.com/guiliberali/Big-Data-2023-Module-1/tree/main/lectures/Lecture_2) and  [Naive Bayes classifier - fundamentals - a cartoon version in Excel](https://github.com/guiliberali/Big-Data-2023-Module-1/blob/main/lectures/Lecture_2/Cartoon_Example_NBC.xlsx)  
+* Lecture 01-2: [notebooks](https://github.com/guiliberali/ ) and  [Naive Bayes classifier - fundamentals - a cartoon version in Excel](https://github.com/guiliberali/Big-Data-2023-Module-1/blob/main/lectures/Lecture_2/Cartoon_Example_NBC.xlsx)  
 
 
 * Lecture 01-3: [notebooks](https://github.com/guiliberali/Big-Data-2023-Module-1/tree/main/lectures/Lecture_3) 
