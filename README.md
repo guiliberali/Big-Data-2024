@@ -1,4 +1,6 @@
-# Big-Data-2024
+# Erasmus University 
+# Rotterdam School of Management
+# Learning from Big Data 2024
 Public Github repo for the 2024 minor Learning from Big Data
 
 ---
