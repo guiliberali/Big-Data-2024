@@ -52,7 +52,7 @@ Tayyip Altan, our TA (tayyip-altan@hotmail.com) will be holding R tutorials as f
 * Tutorial 2.3: R on UCB  examples
 * Tutorial 2.4: R Q&A given module report
 
-All these tutorials are optional. Feel free to attend if you would like to get some tips, but do make sure you first try to install it on your computer before the class.  
+All these tutorials are optional. Feel free to attend if you would like to get some tips, but do make sure you first try to install it on your computer before the class.  The detailed schedule of tutorials is [here](https://github.com/guiliberali/Big-Data-2024/blob/main/tutorials/Tutorial%20plan.xlsx).
 
  
 ## Lecture materials for module 1
