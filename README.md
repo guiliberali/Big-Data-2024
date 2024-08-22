@@ -72,13 +72,13 @@ Advanced reading: On the optimality of naive Bayes - optional [here](https://git
 
 CODE
 
-* Lecture 01-1: [R]( https://github.com/guiliberali/Big-Data-2024) 
+* Lecture 1.1: [R]( https://github.com/guiliberali/Big-Data-2024) 
   
 
-* Lecture 01-2: [R](https://github.com/guiliberali/Big-Data-2024 ) and  [Naive Bayes classifier - fundamentals - a cartoon version in Excel](https://github.com/guiliberali/Big-Data-2024 )  
+* Lecture 1.2: [R](https://github.com/guiliberali/Big-Data-2024 ) and  [Naive Bayes classifier - fundamentals - a cartoon version in Excel](https://github.com/guiliberali/Big-Data-2024 )  
 
 
-* Lecture 01-3: [R](https://github.com/guiliberali/Big-Data-2024) 
+* Lecture 1.3: [R](https://github.com/guiliberali/Big-Data-2024) 
 
 
 
