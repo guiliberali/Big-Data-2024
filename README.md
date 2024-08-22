@@ -20,7 +20,7 @@ Public Github repo for the 2024 minor Learning from Big Data
 ```
 .
 ├── README.md            # this readme file
-├── preparation          # a survival guide to get you familiar with Python and Jupyter
+├── preparation          # a survival guide to get you familiar with R
 ├── code                 # R notebooks with the code used in our lectures. THis is NOT the tutorial sessions 
 ├── tutorials            # R notebooks used in the tutorial sessions 
 ├── assignments         # details and template for all assignment of the course
@@ -31,7 +31,7 @@ Public Github repo for the 2024 minor Learning from Big Data
 
 The repository content is designed to make participation in Learning from Big Data as easy and enjoyable for you as possible. The content of this repo is being continuously updated until the last day of classes. 
 
-In the lectures, we will use Python to illustrate implementation-related key points. The code files will be published in this repository ahead of the lecture. Please make sure that you can execute the code, and solve eventual challenges, before joining the class so you can easily follow the coding parts in the lectures.  
+In the lectures, we will use R to illustrate implementation-related key points. The code files will be published in this repository ahead of the lecture. Please make sure that you can execute the code, and solve eventual challenges, before joining the class so you can easily follow the coding parts in the lectures.  
 
 For the homework assignment, use the structure found in the final assignment file, available in this repo.
 
@@ -39,6 +39,8 @@ For the homework assignment, use the structure found in the final assignment fil
 
 As preparation for the course, or simply to fine-tune your R basic skills if needed, please consider studying the material covered in the beginner's section of https://www.kaggle.com/learn-guide/r.
 In general, use textbooks or online resources to fill gaps in your skills whenever needed.
+
+## Tutorials
 
 Tayyip Altan, our TA (tayyip-altan@hotmail.com) will be holding R tutorials as follows:
 * Tutorial 0: Introduction to R and R Markdown
@@ -59,7 +61,7 @@ Here are links to theory and practice (data/code) when applicable. You may need 
 
 THEORY
 
-* Lecture 01-1: Introduction. [Berger et al. overview on text analytics in marketing](https://journals.sagepub.com/doi/full/10.1177/0022242919873106 ) and [Datar and Bowler's Tamarin case(via Canvas)](https://canvas.eur.nl/courses/45401/modules/items/1041656).   
+* Lecture 01-1: Introduction. [Berger et al. overview on text analytics in marketing](https://journals.sagepub.com/doi/full/10.1177/0022242919873106 ) and [Datar and Bowler's Tamarin case(via Canvas)] ).   
 
 * Lecture 01-2: Supervised Models and NLP. [Zacharski chapters 6 and 7 on NBC](http://guidetodatamining.com/) and [Hutto and Gilber's paper on VADER](https://ojs.aaai.org/index.php/ICWSM/article/view/14550).
 Advanced reading: On the optimality of naive Bayes - optional [here](https://github.com/guiliberali/Big-Data-2024 )  
@@ -70,13 +72,13 @@ Advanced reading: On the optimality of naive Bayes - optional [here](https://git
 
 CODE
 
-* Lecture 01-1: [notebooks]( https://github.com/guiliberali/Big-Data-2024) 
+* Lecture 01-1: [R]( https://github.com/guiliberali/Big-Data-2024) 
   
 
-* Lecture 01-2: [notebooks](https://github.com/guiliberali/Big-Data-2024 ) and  [Naive Bayes classifier - fundamentals - a cartoon version in Excel](https://github.com/guiliberali/Big-Data-2024 )  
+* Lecture 01-2: [R](https://github.com/guiliberali/Big-Data-2024 ) and  [Naive Bayes classifier - fundamentals - a cartoon version in Excel](https://github.com/guiliberali/Big-Data-2024 )  
 
 
-* Lecture 01-3: [notebooks](https://github.com/guiliberali/Big-Data-2024) 
+* Lecture 01-3: [R](https://github.com/guiliberali/Big-Data-2024) 
 
 
 
