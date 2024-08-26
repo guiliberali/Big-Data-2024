@@ -76,13 +76,13 @@ CODE
   
 
 * Lecture 1.2: [R](https://github.com/guiliberali/Big-Data-2024 ) and  [Naive Bayes classifier - fundamentals - a cartoon version in Excel](https://github.com/guiliberali/Big-Data-2024 )  
-
+ (will be updated in the coming days)
 
 * Lecture 1.3: [R](https://github.com/guiliberali/Big-Data-2024) 
+ (will be updated in the coming days)
 
 
-
-ASSIGNMENT MODULE 1
+ASSIGNMENT MODULE 1 (will be updated in the coming days)
 
 * [1. first steps](https://github.com/guiliberali/Big-Data-2024)
 * [2. full details](https://github.com/guiliberali/Big-Data-2024) 
