@@ -79,7 +79,7 @@ CODE
  (coming soon))
 
 * Lecture 1.3: [R](https://github.com/guiliberali/Big-Data-2024) 
- (coming soon))
+ (coming soon)
 
 
 ASSIGNMENT MODULE 1 (coming soon))
