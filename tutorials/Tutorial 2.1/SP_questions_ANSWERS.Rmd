@@ -1,0 +1,294 @@
+---
+title: "Subsetting and Pipe Operations (Practice Questions)"
+author: "Tayyip Altan"
+date: "September 2024"
+output: pdf_document
+urlcolor: blue
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+This file contains some extra coding questions to help you practice subsetting data in R and understanding how the pipe operator works. This material is completely optional and will not be covered in the tutorials. Remember that there are multiple ways to achieve the same results. So even though your code may be different from the answer, it does not mean that your code is incorrect. These exercises are intended to help you practice the concepts and may not result in significant analytic value in their specific context.
+
+# 1. Subsetting data
+
+Subsetting data typically refers to selecting a specific portion of a dataset based on certain conditions, such as choosing specific columns, rows, or a combination of both. This is a valuable skill, especially when working with large datasets, as it allows you to focus on the relevant data and perform your analysis more efficiently.
+
+For a refresher on subsetting data in R, the following sources are recommended: https://www.datacamp.com/tutorial/subsets-in-r and afterwards https://www.r-bloggers.com/2016/11/5-ways-to-subset-a-data-frame-in-r/. After reading through these two blogs, you can try the exercises below.
+
+
+### Loading in the data
+
+To practice with subsetting data, we also need some data to work with. For this, we will use the mtcars dataset. R provides a selection of built in datasets for you to use. One of these is the mtcars dataset. By calling the data() function below and specifying mtcars, the dataset should appear in your global environment in the top right. Therefore, there is no need for you to have a file of the data.
+
+```{r}
+# Loading in the data
+data(mtcars)
+
+# Inspecting the data by looking at the dataset, its datatypes, and summary statistics
+View(mtcars)
+str(mtcars)
+summary(mtcars)
+```
+
+### 1.1: Inspect the first ten rows of the dataset
+
+```{r}
+# TODO: Your code here...
+head(mtcars, 10) # by specifying 10, we determine how many of the first observations we want to see
+mtcars[1:10,]
+```
+
+### 1.2: Inspect the last ten rows of the dataset
+
+```{r}
+# TODO: Your code here...
+tail(mtcars, 10)
+mtcars[(nrow(mtcars) - 9):nrow(mtcars),]
+```
+
+
+### 1.3: Select row 5 of the mtcars dataset
+
+```{r}
+# TODO: Your code here...
+mtcars[5,]
+```
+
+
+### 1.4: Select rows 1, 8, 12, 13, and 25 of the mtcars dataset
+
+```{r}
+
+# TODO: Your code here...
+mtcars[c(1, 8, 12, 13, 25), ]
+
+```
+
+
+### 1.5: Select all BUT the first ten rows of the mtcars dataset
+
+```{r}
+
+# TODO: Your code here...
+mtcars[-c(1:10), ]
+
+```
+
+### 1.6: Select the last column in the mtcars dataset
+
+```{r}
+
+# TODO: Your code here...
+mtcars[, ncol(mtcars)]
+mtcars[, 11]
+
+# Alternatively you could also specify the name of the column(s)
+mtcars[, 'carb']
+mtcars$carb
+
+```
+
+### 1.7: Select the last five columns in the mtcars dataset
+
+```{r}
+
+# TODO: Your code here...
+mtcars[, (ncol(mtcars) - 4):ncol(mtcars)]
+
+```
+
+
+### 1.8: Select the columns 'mpg', 'cyl', and 'hp'
+
+```{r}
+
+# TODO: Your code here...
+mtcars[, c(1, 2, 4)]
+mtcars[, c(1:2, 4)]
+mtcars[, c('mpg', 'cyl', 'hp')]
+
+```
+
+
+### 1.9: Display rows 9, 13, and 30 and the first five columns (in one dataframe)
+
+```{r}
+
+# TODO: Your code here...
+mtcars[c(9, 13, 30), 1:5]
+
+```
+
+### 1.10: Display the first twenty rows and exclude the 'mpg', 'cyl', 'disp', and 'gear' columns
+
+```{r}
+
+# TODO: Your code here...
+mtcars[1:20, -c(1:3, 10)]
+
+# More advanced solution based on column names:
+mtcars[1:20, !(colnames(mtcars) %in% c('mpg', 'cyl', 'disp', 'gear'))]
+
+# EXPLANATION:
+# colnames() retrieves the column names of the mtcars dataset. Using the %in% operator, we check 
+# whether the column names are in the vector c('mpg', 'cyl', 'disp', 'gear'), which results in TRUE 
+# for columns that are in the vector (the ones we want to exclude) and FALSE for those that are not. 
+# The ! operator negates this, so columns that are TRUE (i.e., in the list) become FALSE and vice versa. 
+# This ensures that the columns we want to exclude are not selected.
+
+
+```
+
+### 1.11: Display the miles per gallon (mpg) and cylinders (cyl) for cars with more than 100 horse power (hp)
+
+
+```{r}
+
+# TODO: Your code here...
+
+# Using the subset() function
+subset(mtcars, hp > 100, select = c(mpg, cyl))
+
+# Alternative method to achieve the same results
+mtcars[mtcars[,'hp'] > 100, c('mpg', 'cyl')]
+mtcars[mtcars$hp > 100, c('mpg', 'cyl')]
+```
+
+### 1.12: Display the horse power (hp) for cars with four gears and less than 20 miles per gallon (mpg)
+
+
+```{r}
+
+# TODO: Your code here...
+
+# using the subset() function:
+subset(mtcars, gear == 4 & mpg < 20, select = hp)
+
+# Alternative way of doing it (without the subset function)
+mtcars[(mtcars[,'gear'] == 4) & (mtcars[,'mpg'] < 20), 'hp']
+mtcars[(mtcars$gear == 4) & (mtcars$mpg < 20), 'hp']
+
+```
+
+# 2. Pipe Operator
+
+Pipe operators (%>%) are commonly used in R to make code more readable and efficient, especially when you are performing a series of operations on data. The pipe operator, primarily available through the magrittr or dplyr package, allows you to chain together multiple functions in a linear and intuitive way, reducing the need for intermediate variables. 
+
+To learn more about pipe operations in R before trying the exercises, visit: https://www.datacamp.com/tutorial/pipe-r-tutorial 
+
+Furthermore, we will be using the same data as before, the mtcars dataset. To use the pipe operator we also need to load the 'dplyr' package.
+
+```{r}
+# Load dplyr
+library(dplyr)
+```
+
+
+### 2.1: Display the miles per gallon (mpg) and cylinders (cyl) for cars with more than 100 horse power (hp)
+
+Note that this is the same question as 1.11, but now you are asked to use a pipe operation to achieve the same result.
+
+```{r}
+# TODO: Your code here...
+
+mtcars %>%
+  filter(hp > 100) %>%
+  select(mpg, cyl)
+```
+
+### 2.2: Display the horse power (hp) for cars with four gears and less than 20 miles per gallon (mpg)
+
+Note that this is the same question as 1.12, but now you are asked to use a pipe operation to achieve the same result.
+
+```{r}
+# TODO: Your code here...
+
+mtcars %>%
+  filter((gear == 4) & (mpg < 20)) %>%
+  select(hp)
+```
+
+### 2.3: Determine the correlation between weight (wt) and 1/4 mile time (qsec) for cars with more than 4 cylinders, rounded to three decimals.
+
+
+```{r}
+# TODO: Your code here...
+
+mtcars %>%
+  filter(cyl > 4) %>%
+  select(wt, qsec) %>%
+  cor() %>%
+  round(3)
+
+```
+
+
+### 2.4: Display the average miles per gallon (mpg) per cylinder (cyl) for cars with more than 70 horse power (hp)
+
+
+```{r}
+# TODO: Your code here...
+
+mtcars %>%
+  filter(hp > 70) %>%
+  group_by(cyl) %>%
+  summarise(average_mpg = mean(mpg))
+
+```
+
+### 2.5: Determine the horse power (hp) to weight (wt) ratio rounded to 2 decimals and display the displacement (disp) of the cars with above average horse power to weight ratio
+
+
+```{r}
+# TODO: Your code here...
+
+mtcars %>%
+  mutate(hp_per_wt = round(hp / wt, 2)) %>%
+  filter(hp_per_wt > mean(hp_per_wt)) %>%
+  select(disp)
+
+```
+
+### 2.6: Determine the horse power (hp) to weight (wt) ratio rounded to 2 decimals and display the displacement (disp) of the cars with above average horse power to weight
+
+
+```{r}
+# TODO: Your code here...
+
+mtcars %>%
+  mutate(hp_per_wt = round(hp / wt, 2)) %>%
+  filter(hp_per_wt > mean(hp_per_wt)) %>%
+  select(disp)
+
+```
+
+### 2.7: Display the histogram of acceleration efficiency (horse power divided by 1/4 mile time) 
+
+
+```{r}
+# TODO: Your code here...
+
+mtcars %>%
+  mutate(acc_efficiency = as.numeric(hp / qsec)) %>%
+  pull(acc_efficiency) %>%  # extracts the data as a numerical vector so we can plot it
+  hist(breaks = 10)         # 'breaks' specifies the number of bins we want
+
+```
+
+### 2.8: Determine the percentage of cars with a manual transmission (column am, where 1 indicates manual) by cylinder rounded to two decimals
+
+```{r}
+# TODO: Your code here...
+
+mtcars %>%
+  group_by(cyl) %>%
+  summarise(prop_manual = round(100 * mean(am), 2))
+
+```
+
+
