@@ -267,6 +267,17 @@ df_history_agg <- df_Yahoo_UCB_eps_greedy %>%
 
 \textbf{Task 5: to better understand the $\epsilon$-greedy policy and UCB algorithm, plot for each the cumulative \% of the time a certain arm is chosen. Which arm is chosen most often? does this differ between the two approaches?}
 
+The data needed to complete this task is transformed below. The transformed datasets each contain the following columns for their respective policy:
+
+```{=tex}
+\begin{itemize}
+\item \textbf{$t$}: the step at which a choice was made
+\item \textbf{choice}: the choice made by the algorithm
+\item \textbf{cum\_sum\_n}: cumulative sum of the time an arm is chosen
+\item \textbf{avg\_cum\_sum\_n}: cumulative \% of time an arm is chosen
+\end{itemize}
+```
+
 ```{r, error = TRUE, echo = T, results = 'hide', message=FALSE}
 
 # dataframe with arm choices for UCB
